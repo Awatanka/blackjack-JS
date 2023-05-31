@@ -1,0 +1,34 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: url("images/casino-table.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+h1 {
+  color: #f5bb28;
+  box-shadow: dimgray;
+}
+
+#message-el {
+  font-weight: 500;
+}
+
+button {
+  color: white;
+  background: #f5bb28;
+  width: 9.375rem;
+  height: 40px;
+  border: none;
+  border-radius: 0.3125rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #f8c850;
+  color: black;
+  cursor: pointer;
+}
