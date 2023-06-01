@@ -6,6 +6,16 @@ body {
   text-align: center;
   color: white;
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 6.25rem;
+  background-color: rgba(11, 60, 19, 0.435);
+  border-radius: 1.25rem;
 }
 
 h1 {
@@ -15,6 +25,7 @@ h1 {
 
 #message-el {
   font-weight: 500;
+  font-size: 1.25rem;
 }
 
 button {
