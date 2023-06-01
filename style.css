@@ -24,11 +24,16 @@ button {
   height: 40px;
   border: none;
   border-radius: 0.3125rem;
+  margin: 0.625rem;
 }
 
 button:hover {
-  transform: scale(1.1);
-  background: #f8c850;
+  transform: scale(1.02);
+  color: black;
+  cursor: pointer;
+}
+
+button::after {
   color: black;
   cursor: pointer;
 }
