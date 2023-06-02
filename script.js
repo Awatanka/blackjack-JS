@@ -1,4 +1,4 @@
-let player = {
+const player = {
   name: "User",
   chips: 200,
 };
@@ -8,22 +8,22 @@ let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
 let message = "";
-let messageEl = document.getElementById("message-el");
-let sumEl = document.getElementById("sum-el");
-let cardsEl = document.getElementById("cards-el");
-let playerEl = document.getElementById("player-el");
+const messageEl = document.getElementById("message-el");
+const sumEl = document.getElementById("sum-el");
+const cardsEl = document.getElementById("cards-el");
+const playerEl = document.getElementById("player-el");
 
 playerEl.textContent = `${player.name}: $${player.chips}`;
 
 function getRandomCard() {
-  let randomNumber = Math.floor(Math.random() * 13) + 1;
+  const randomNumber = Math.floor(Math.random() * 13) + 1;
   return randomNumber > 10 ? 10 : randomNumber === 1 ? 11 : randomNumber;
 }
 
 function startGame() {
   isAlive = true;
-  let firstCard = getRandomCard();
-  let secondCard = getRandomCard();
+  const firstCard = getRandomCard();
+  const secondCard = getRandomCard();
   cards = [firstCard, secondCard];
   sum = firstCard + secondCard;
   renderGame();
